@@ -30,11 +30,11 @@ const styles = StyleSheet.create({
     height: "15%",
     alignItems: "center",
     justifyContent: "space-evenly",
-    paddingTop: 50,
+    paddingTop: 40,
   },
   logo: {
-    width: 90,
-    height: 90,
+    width: 100,
+    height: 100,
     // marginTop: 50,
   },
   title: {
