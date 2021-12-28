@@ -2,15 +2,15 @@ import { StyleSheet, Text, View, Image } from "react-native";
 import logo from "../assets/vk-round-logo_transparent.png";
 
 // Importing google montserrat font
-import { useFonts, Montserrat_700Bold } from "@expo-google-fonts/montserrat";
+// import { useFonts, Montserrat_700Bold } from "@expo-google-fonts/montserrat";
 
 // Header container
 // Contains Logo and Title
 export default function Header() {
   // Loading the google fonts uphold
-  let [fontsLoaded] = useFonts({
-    Montserrat_700Bold,
-  });
+  //   let [fontsLoaded] = useFonts({
+  //     Montserrat_700Bold,
+  //   });
 
   return (
     <View style={styles.title_container}>
@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "#F2F3E8",
-    fontFamily: "Montserrat_700Bold",
+    fontFamily: "Roboto",
+    fontWeight: "bold",
     fontSize: 30,
     // marginTop: 30,
     marginLeft: 10,
