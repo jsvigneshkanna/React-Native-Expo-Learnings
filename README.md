@@ -7,15 +7,32 @@ Learing React-Native app development using Expo Technology from different resour
 1. Expo CLI (create, modify, deploy react-native apps through cmd line)
 2. Expo Go in mobile (visulize the developed app in mobile device with simulator/ emulator)
 3. Nodejs
-4.
+
+---
 
 ## Quickstart
 
 ```
 $ npm install --global expo-cli (Installs cli in system globally)
+
 $ expo init my-project (Creating a project)
+
 $ expo start (Starts the app and opens qrcode to scan in mobiles)
 ```
+
+## Weather App Example-1
+
+## [Figma link](https://www.figma.com/file/SMVLK9OmDgo7pWsQBEL5Ug/Weather-app-ReactNative?node-id=0%3A1)
+
+## Problems encountered
+
+### 1. App folder not able to upload in git repo
+
+    Expo folder creates a repo inside app-folder. we need to delete the .git folder from app-folder. This .git folder is usually hidden one
+
+**Ref**: [stackoverflow answer](https://stackoverflow.com/questions/64863926/i-cant-upload-react-native-expo-projects-on-github)
+
+---
 
 ## Reference
 
