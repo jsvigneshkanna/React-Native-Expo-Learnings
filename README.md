@@ -26,9 +26,11 @@ $ expo install expo-sharing (To able to share the images by various modes - blue
 $ expo install expo-splash-screen (To make splash screen modification *optional*)
 ```
 
-## Weather App Example-1
+## Photo Sharing App Example-1
 
-## [Figma link](https://www.figma.com/file/SMVLK9OmDgo7pWsQBEL5Ug/Weather-app-ReactNative?node-id=0%3A1)
+[Figma link](https://www.figma.com/file/SMVLK9OmDgo7pWsQBEL5Ug/Weather-app-ReactNative?node-id=0%3A1)
+
+[Published app link](https://expo.dev/@vigneshkanna108/photo-sharing-app)
 
 ## Problems encountered
 
