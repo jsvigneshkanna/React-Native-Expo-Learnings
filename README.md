@@ -22,6 +22,8 @@ $ expo start (Starts the app and opens qrcode to scan in mobiles)
 $ expo install expo-image-picker (To add native feature to pick images from gallery)
 
 $ expo install expo-sharing (To able to share the images by various modes - bluetooth, wathsapp etc)
+
+$ expo install expo-splash-screen (To make splash screen modification *optional*)
 ```
 
 ## Weather App Example-1
