@@ -1,4 +1,6 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import * as ImagePicker from "expo-image-picker";
+import * as Sharing from "expo-sharing";
 import sampleImage from "../assets/vk-round-logo.png";
 
 // Importing google montserrat font
@@ -6,11 +8,23 @@ import sampleImage from "../assets/vk-round-logo.png";
 
 // Image sharing component
 export default function ImageShare() {
+  // Image picking logi (Async)
+  let openImagePickerAsync = async () => {
+    let permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
+
+    if (permissionResult.granted === false) {
+      alert("Permission to access gallery is required 😶");
+      return;
+    }
+
+    let pickerResult = await ImagePicker.launchImageLibraryAsync();
+    console.log(pickerResult);
+  };
   return (
     <View style={styles.share_container}>
       <Image source={sampleImage} style={styles.sample_image} />
       <Text style={styles.instruction}>Click below to select an Image and share</Text>
-      <TouchableOpacity onPress={() => alert("Hello, world!")} style={styles.btn}>
+      <TouchableOpacity onPress={openImagePickerAsync} style={styles.btn}>
         <Text style={{ fontSize: 18, fontFamily: "Roboto", color: "#F2F3E8", fontWeight: "bold" }}>Pick a photo</Text>
       </TouchableOpacity>
     </View>
