@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     height: "15%",
     alignItems: "center",
     justifyContent: "space-evenly",
-    paddingTop: 30,
+    paddingTop: 50,
   },
   logo: {
     width: 90,
