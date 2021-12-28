@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   share_container: {
     // marginTop: 10,
     display: "flex",
-    height: "75%",
+    height: "80%",
     alignItems: "center",
     justifyContent: "center",
     paddingLeft: 40,
