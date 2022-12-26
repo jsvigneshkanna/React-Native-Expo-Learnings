@@ -24,7 +24,7 @@ export default function ImageShare() {
 
     // If permission granted then pick image from gallery
     let pickerResult = await ImagePicker.launchImageLibraryAsync();
-    setPickedImage({ localUri: pickerResult.uri });
+    setPickedImage({ localUri: pickerResult.assets[0].uri });
   };
 
   let ImageShareCompatibility = async () => {
@@ -47,7 +47,7 @@ export default function ImageShare() {
             Share this photo
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={openImagePickerAsync} style={styles.share_btn}>
+        <TouchableOpacity onPress={openImagePickerAsync} style={styles.share_btn_retry}>
           <Text style={{ fontSize: 18, fontFamily: "Roboto", color: "#F2F3E8", fontWeight: "bold" }}>
             Dont like this Image
           </Text>
@@ -84,27 +84,37 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "40%",
     alignItems: "center",
-    borderRadius: 10,
+    borderRadius: 20,
     resizeMode: "contain",
     marginBottom: 20,
+    borderWidth: 2,
+    borderColor: "#8f00b3",
   },
   instruction: {
     fontFamily: "Roboto",
-    fontWeight: "100",
-    fontSize: 24,
-    color: "#C9C2E5",
+    fontWeight: "300",
+    fontSize: 18,
+    color: "white",
     textAlign: "center",
     marginBottom: 20,
   },
   btn: {
-    backgroundColor: "#9D2DD2",
-    borderRadius: 10,
+    backgroundColor: "#8f00b3",
+    borderRadius: 20,
     padding: 20,
     marginTop: 30,
   },
   share_btn: {
+    backgroundColor: "#2eb82e",
+    borderRadius: 20,
+    padding: 20,
+    marginTop: 10,
+    width: 240,
+    alignItems: "center",
+  },
+  share_btn_retry: {
     backgroundColor: "red",
-    borderRadius: 10,
+    borderRadius: 20,
     padding: 20,
     marginTop: 10,
     width: 240,
@@ -114,8 +124,10 @@ const styles = StyleSheet.create({
     width: 300,
     height: 300,
     alignItems: "center",
-    borderRadius: 10,
+    borderRadius: 20,
     resizeMode: "contain",
     marginBottom: 20,
+    borderWidth: 2,
+    borderColor: "#8f00b3",
   },
 });
