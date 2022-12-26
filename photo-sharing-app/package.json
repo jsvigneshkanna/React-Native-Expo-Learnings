@@ -11,19 +11,19 @@
   },
   "dependencies": {
     "@expo-google-fonts/montserrat": "^0.2.0",
-    "expo": "^43.0.0",
-    "expo-font": "~10.0.3",
-    "expo-image-picker": "~11.0.3",
-    "expo-sharing": "~10.0.3",
-    "expo-splash-screen": "~0.13.5",
-    "expo-status-bar": "~1.1.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-native": "0.64.3",
-    "react-native-web": "0.17.1"
+    "expo": "^47.0.0",
+    "expo-font": "~11.0.1",
+    "expo-image-picker": "~14.0.2",
+    "expo-sharing": "~11.0.1",
+    "expo-splash-screen": "~0.17.5",
+    "expo-status-bar": "~1.4.2",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-native": "0.70.5",
+    "react-native-web": "~0.18.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.19.3"
   },
   "private": true
 }
