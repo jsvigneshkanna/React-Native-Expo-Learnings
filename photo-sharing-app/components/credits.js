@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Credit() {
   return (
     <View style={styles.credit_container}>
-      <Text style={styles.credits}>Made with ❣️ VK</Text>
+      <Text style={styles.credits}>Made with ❣️ Vignesh Kanna JS | 2021</Text>
     </View>
   );
 }
@@ -12,7 +12,7 @@ export default function Credit() {
 const styles = StyleSheet.create({
   credit_container: {
     height: "5%",
-    backgroundColor: "#9D2DD2",
+    backgroundColor: "#0d0d26",
     alignItems: "center",
     justifyContent: "space-evenly",
   },

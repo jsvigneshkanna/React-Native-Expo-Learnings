@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <View style={styles.title_container}>
       <Image source={logo} style={styles.logo} />
-      <Text style={styles.title}>Image Sharable</Text>
+      <Text style={styles.title}>VK Image Sharable</Text>
     </View>
   );
 }
@@ -25,16 +25,18 @@ const styles = StyleSheet.create({
   title_container: {
     display: "flex",
     flexDirection: "row",
-    backgroundColor: "#9D2DD2",
+    backgroundColor: "#0d0d26",
     width: "100%",
     height: "15%",
     alignItems: "center",
     justifyContent: "space-evenly",
     paddingTop: 40,
+    borderBottomColor: "#8f00b3",
+    borderBottomWidth: 1,
   },
   logo: {
-    width: 100,
-    height: 100,
+    width: 80,
+    height: 80,
     // marginTop: 50,
   },
   title: {
